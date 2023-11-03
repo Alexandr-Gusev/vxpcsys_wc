@@ -1,0 +1,21 @@
+{
+    "mode": "portable",
+    "chrome_location": "D:\\GoogleChromePortable\\App\\Chrome-bin\\chrome.exe",
+    "chromedriver_location": "D:\\GoogleChromePortable\\App\\Chrome-bin\\chromedriver.exe",
+    "headless": false,
+    "profile": "Profile A",
+    "profiles_location": "./profiles",
+    "downloads_location": "./downloads",
+    "remote_profiles_location": "/profiles",
+    "remote_downloads_location": "/downloads",
+
+    "bot": {
+        "token": "111",
+        "chat_id": -111,
+        "timeout": 5
+    },
+
+    "docker_warmup": 30,
+    "site_warmup": 30,
+    "scan_interval": 30
+}

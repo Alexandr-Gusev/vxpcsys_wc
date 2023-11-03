@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  chrome_container:
+    container_name: chrome_container
+    image: selenium/standalone-chrome:4.1.1-20211217
+    restart: unless-stopped
+    shm_size: "2gb"
+    volumes:
+      - ./profiles:/profiles
+      - ./downloads:/downloads
+    ports:
+      # web driver endpoint - http://localhost:4444/wd/hub
+      - "4444:4444"
+      # viewer - http://localhost:7900/?autoconnect=1&resize=scale&password=secret
+      - "7900:7900"
+    environment:
+      - TZ=Europe/Moscow
